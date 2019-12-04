@@ -1,0 +1,108 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border-sizing: border-box;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  
+}
+
+td, th {
+  padding: 0;
+}
+
+h1, h2, h3{
+    text-align: center;
+}
+
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+textarea {
+  border: 1px solid #ccc;
+  height: 35px;
+  font-size: 14px;
+  color: #555;
+  background-color: white;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=password]:focus,
+textarea:focus {
+  outline: 0;
+  border-color: #4697e4;
+}
+label {
+    color: black;
+    font-weight: bold;
+}
+button {
+    height: 38px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+html, body {
+    width: 500px;
+    height: 300px;
+
+}
+
+form {
+	  border: 1px solid #428bca;
+    margin: auto;
+    max-width: 570px;
+}
+
+form > header {
+    background-color: #428bca;
+    text-align: center;
+    color: white;
+}
+
+form > nav {
+    display: table;
+    margin: auto;
+    border-bottom: 1px solid #428bca;
+    width: 100%;
+    padding: 5px 0px 5px 0px;
+}
+.botao {
+    width: 85px;
+    height: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+form > fieldset {
+    border: none;
+    padding: 5px;
+}
+form > fieldset > section {
+    display: table;
+    border-spacing: 10px;
+    width: 100%;
+}
+form > fieldset > section > label {
+    display: table-cell;
+}
+label > input {
+    display: block;
+    width: 100%;
+}
+
+form > fieldset > section > div {
+    display: table-cell;
+    vertical-align: bottom;
+}
+
+.form-label-code{
+  width: 150px;
+
+}
