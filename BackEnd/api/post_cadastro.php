@@ -12,12 +12,14 @@ if(!empty($data)){
  		$cadastroControl = new CadastroControl();
  		$resposta = $cadastroControl->insert($obj);
  		http_response_code(200);
+ 		
  		$obj->id = $resposta;
  		echo json_encode($obj);
  	}
  	catch (PDOException $e) {
  		http_response_code(400);
 		echo json_encode(array("mensagem" => "Parâmetros Inválidos"));
+		echo e.getmessage->error;
 	}
 }
 else {

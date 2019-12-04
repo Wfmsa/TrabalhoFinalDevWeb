@@ -4,6 +4,7 @@ define('DB_NAME','fermatil_TrabFinalDevWeb'); // COLOCAR O NOME DA BASE DE DADOS
 define('DB_HOST', 'fermatil.com.br'); // COLOCAR O HOST DA BASE DE DADOS
 define('DB_USER','fermatil_devweb'); // COLOCAR O USUÁRIO DA BASE DE DADOS
 define('DB_PASS','QLGtqfUE@%y'); // COLOCAR A SENHA DO BANCO DE DADOS AQUI
+
 class Conexao {
     private static $instance;
     public static function getInstance(){
