@@ -1,6 +1,6 @@
 window.onload = function(e) {
 	fetch(
-		'http://localhost:3306/TrabFinalDevWeb/cadastro', {		
+		'http://devweb.uni.fermatil.com.br/TrabalhoFinalDevWeb/BackEnd/cadastros', {		
 		}).then(response => response.json())				
 	.then(data => { 
 		console.log(data);
@@ -30,7 +30,7 @@ function enviarForm() {
 	data['dtfinal'] = form.dtfinal.value; 
 	data['descricao'] = form.descricao.value;
 	// console.log(JSON.stringify(data));
-	fetch('http://localhost:3306/TrabFinalDevWeb/cadastro', {
+	fetch('http://devweb.uni.fermatil.com.br/TrabalhoFinalDevWeb/BackEnd/cadastros', {
 		method: 'POST',       
 		body: JSON.stringify(data)
 	})
@@ -42,6 +42,8 @@ function enviarForm() {
 		}   
 
 	})
-	.then((data) => console.log(data))
+	.then((data) => {
+		alert("Inserido com sucesso");
+		location.href="principal.html"; })
 	.catch(err => console.log('Error message:', err.statusText));
 }

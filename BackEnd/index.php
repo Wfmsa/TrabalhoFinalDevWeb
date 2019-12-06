@@ -29,7 +29,7 @@ $request = $_SERVER['REQUEST_URI'];
 
 switch ($request) {
     case '/'.PASTAPROJETO.'/cadastros' :
-        require __DIR__ . '../api/'.$answer.'_Cadastro.php';
+        require __DIR__ . '/api/'.$answer.'_cadastro.php';
         break;
     default:
         //require __DIR__ . '/api/404.php';

@@ -1,23 +1,43 @@
 <html lang="pt">
 <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="description" content="Cadastro"><meta name="viewport" content="width=device-width">
 	<link href="css/style1.css" rel="stylesheet" type="text/css" />
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
 	<title>Cadastro</title>
+	<script src="js/requisicoes.js"></script>
 </head>
 <body class="vsc-initialized">
-	<form id="formCadastrar" action="javascript:enviarForm()">
-		<header>
-			<h2 id="titulo">Cadastro</h2>
-		</header>
+<form action="javascript:enviarForm()" id="formCadastrar">
+<header>
+<h2 id="titulo">Cadastro</h2>
+</header>
 
-		<fieldset>
-			<section><label class="form-label-code">C&oacute;digo: <input maxlength="10" id="codigo" required="required" type="text" /> </label> <label> Respons&aacute;vel: <input maxlength="10" id="responsavel" required="required" type="text" /> </label></section>
+<fieldset>
+<section><label class="form-label-code">C&oacute;digo: <input id="codigo" maxlength="15" required="required" type="text" /> </label> <label> Respons&aacute;vel: <input id="responsavel" maxlength="30" required="required" type="text" /> </label></section>
 
-			<section><label>Data de Inicio: <input maxlength="10" id="dtinicio" required="required" type="text" /> </label> <label> Data Final: <input maxlength="10" id="dtfinal" required="required" type="text" /></label></section>
+<section><label>Data de Inicio: <input id="dtinicio" maxlength="10" required="required" type="text" /> </label> <label> Data Final: <input id="dtfinal" maxlength="10" required="required" type="text" /></label></section>
 
-			<section><label class="form-label-code">Descri&ccedil;&atilde;o: <input maxlength="255" id="descricao" required="required" type="text" />&nbsp;&nbsp; </label></section>
+<section><label class="form-label-code">Descri&ccedil;&atilde;o: <input id="descricao" required="required" type="text" />&nbsp;&nbsp; </label></section>
 
-			<p><input class="botao" type="submit" value="Concluir" />&nbsp; &nbsp;&nbsp;<input class="botao" type="reset" value="Limpar" /></p>
-		</fieldset>
-	</form>
+<p><input class="botao" type="submit" value="Concluir" />&nbsp; &nbsp;&nbsp;<input class="botao" type="reset" value="Limpar" /></p>
+</fieldset>
+</form>
+
+<div class="container fluid">
+<div class="row">
+<div class="col-sm-12">
+<table align="left" cellpadding="5" class="table table-bordered table-dark" id="tabeladedados">
+	<tbody>
+		<tr>
+			<th>Codigo</th>
+			<th>Responsavel</th>
+			<th>Data de Inicio</th>
+			<th>Data Final</th>
+			<th>Descri&ccedil;&atilde;o</th>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
 </body>
 </html>

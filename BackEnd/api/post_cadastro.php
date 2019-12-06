@@ -18,8 +18,8 @@ if(!empty($data)){
  	}
  	catch (PDOException $e) {
  		http_response_code(400);
-		echo json_encode(array("mensagem" => "Parâmetros Inválidos"));
-		echo e.getmessage->error;
+		
+		echo $e->getMessage();
 	}
 }
 else {
